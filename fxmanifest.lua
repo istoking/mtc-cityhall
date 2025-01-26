@@ -2,11 +2,11 @@ fx_version 'cerulean'
 games { 'rdr3', 'gta5' }
 
 author 'More Than Code'
-description 'Replacement cityhall script for qbx_core'
+description 'Replacement cityhall script for qb-core'
 version '1.0.0'
 
 client_scripts {
-    '@qbx_core/modules/playerdata.lua',
+    --'@qbx_core/modules/playerdata.lua',
     'client/headshot.lua',
     'client/nui.lua',
     'client/callbacks.lua',
@@ -22,7 +22,7 @@ server_scripts {
 
 shared_scripts {
     '@ox_lib/init.lua',
-    '@qbx_core/modules/lib.lua',
+    --'@qbx_core/modules/lib.lua',
     'config.lua',
     'lang.lua',
 }

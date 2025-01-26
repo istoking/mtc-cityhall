@@ -2,6 +2,8 @@
 
 # MTC Cityhall
 
+## THIS VERSION HAS BEEN REVERTED BACK TO QBCORE FROM QBX
+
 ## Our links
 - [Discord](https://discord.gg/APFHf9hhkG)
 - [Tebex (Paid scripts)](https://mtc.tebex.io/)
@@ -14,7 +16,7 @@
 4. Trigger the event `mtc-cityhall:client:open` or the `Open` export.
 
 ### Dependencies
-- [qbx_core](https://github.com/Qbox-project/qbx_core)
+- [qb-core](https://github.com/qbcore-framework/)
 
 ### How to change the UI language?
 

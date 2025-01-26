@@ -1,16 +1,14 @@
-QBCore = exports['qb-core']:GetCoreObject()
-
 Config = {}
 
 Config.RenewedPhone = false --> Set to true if you are using Renewed scripts their qb-phone
-Config.idcard = "qbx_idcard" -- bl_idcard, qbx_idcard, um_idcard
+Config.idcard = "id_card" -- bl_idcard, qbx_idcard, um_idcard
 
 -- Ped spawner
 Config.ped = {
     enabled = true,
-    model = "a_m_m_indian_01",
-    coords = vector4(-266.88833618164, -961.62231445313, 30.227128982544, 210.22946166992),
-    label = "Open cityhall"
+    model = "a_m_m_business_01",
+    coords = vector4(-552.95, -192.04, 38.22, 209.78),
+    label = "Open Cityhall"
 }
 
 Config.blip = {
@@ -18,17 +16,29 @@ Config.blip = {
     Name = "Cityhall",
     SpriteId = 487,
     Color = 2,
-    Scale = 1.3,
+    Scale = 1.0,
     ShortRange = true,
     Alpha = 255,
-    Coords = vector3(-266.88833618164, -961.62231445313, 31.227128982544)
+    Coords = vector3(-552.95, -192.04, 38.22)
 }
 
 -- Jobs for hire
 Config.jobs = {
     {
-        job = "trucker",
-        label = "Trucker",
+        job = "bus",
+        label = "Bus Driver",
+    },
+    {
+        job = "garbage",
+        label = "Garbage Collector",
+    },
+    {
+        job = "vineyard",
+        label = "Vineyard Worker",
+    },
+    {
+        job = "hotdog",
+        label = "Hotdog Salesman",
     },
     {
         job = "taxi",
@@ -57,13 +67,13 @@ Config.items = {{
     meta = 'driver',
     price = 100,
     id_card = true,
-}, {
-    item = "weaponlicense",
-    label = "Weapon License",
-    meta = 'weapon',
-    price = 100,
-    id_card = true
-}}
+}, --{
+    --item = "weaponlicense",
+    --label = "Weapon License",
+    --meta = 'weapon',
+    --price = 100,
+    --id_card = true
+}
 
 -- Items shown in the information tab
 Config.licenseItems = {{
@@ -72,7 +82,7 @@ Config.licenseItems = {{
 }, {
     item = 'driver_license',
     label = 'Driver License'
-}, {
-    item = 'weaponlicense',
-    label = 'Weapon License'
-}}
+}, --{
+    --item = 'weaponlicense',
+    --label = 'Weapon License'
+}
